@@ -1,0 +1,31 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #545149;
+  background-color: #f4f1ec;
+}
+
+.tweeted {
+  margin-top: 0.5em;
+  font-family: Bungee, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #4056A1;
+  color: #FFFF;
+}
+
+
+
+.NEGATIVE {
+  color: red;
+}
+

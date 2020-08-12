@@ -30,6 +30,7 @@ main {
   width: 90%;
   background-color: #f4f1ec;
   display: flex;
+  justify-content: center;
 }
 
 .tweet {
@@ -122,17 +123,19 @@ main {
 }
 
 /* Desktop styles */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 800px) {
   header {
     width: 40%;
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; */
+    float: left;
   }
   .class {
     width: 60%;
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; */
+    float: right;
   }
 }

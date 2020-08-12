@@ -18,8 +18,121 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  margin: auto;
+  width: 90%;
+  background-color: #f4f1ec;
+  display: flex;
+}
+
+.tweet {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 2px solid hsl(44, 7%, 31%);
+  padding: 0.5em;
+}
+
+.tweet:hover {
+  box-shadow: 4px 4px #c7afd6;
+}
+
+
+.header {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image {
+  margin-right: 0.5em;
+}
+
+.user {
+  padding-right: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  display: none;
+}
+
+.tweet:hover .username {
+  opacity: 1;
+  color: #c7afd6;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.body {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  border-bottom: 2px solid #545149;
+}
+
+.footer {
+  font-size: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.symbols {
+  color: #4056A1;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+
+.too-long {
+  display: none;
+  margin-top: 1em;
+  padding: 0.5em;
+  padding-left: 14em;
+  padding-right: 14em;
+  border: solid red;
+  color: red;
+  
+}
+
+.empty {
+  display: none;
+  margin-top: 1em;
+  padding: 0.5em;
+  padding-left: 18em;
+  padding-right: 18em;
+  border: solid red;
+  color: red;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  header {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .class {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

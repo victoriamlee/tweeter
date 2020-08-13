@@ -105,7 +105,16 @@ const empty = () => {
   } else {
     return false;
   }
-}
+};
+
+const tooLong = () => {
+  if ($('#tweet-text').val().length > 140) {
+    visible();
+    return true;
+  } else {
+    return false;
+  }
+};
 
 // const isThereError = () => {
 //   if ($('#tweet-text').val() === "") {
@@ -127,8 +136,8 @@ $(document).ready(function() {
     if (empty()) {
       // visible();
       $('.empty').slideDown();
-    } else if ($('#tweet-text').val().length > 140) {
-      visible();
+    } else if (tooLong()) {
+      // visible();
       $('.too-long').slideDown();
     } else {
       visible();

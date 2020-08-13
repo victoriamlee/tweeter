@@ -29,7 +29,7 @@ const data = [
     },
     "created_at": 1461113959088
   }
-]
+];
 
 
 // function used to escape some text and then use it inside $()
@@ -37,7 +37,7 @@ const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
-}
+};
 
 
 // creates new tweet
@@ -62,8 +62,7 @@ const createTweetElement = tweetObj => {
               <i class="fas fa-heart"></i>
             </span>
           </div>
-        </article>` 
-        console.log($tweet)   
+        </article>`;
   return $tweet;
 };
 
@@ -71,29 +70,29 @@ const createTweetElement = tweetObj => {
 // loops through given object to create new tweets
 const renderTweets = tweets => {
   for (let tweetObj of tweets) {
-  $('#posted').prepend(createTweetElement(tweetObj));
+    $('#posted').prepend(createTweetElement(tweetObj));
   }
-}
+};
 
 
 // sends ajax request to load all tweets
 const loadTweets = () => {
-  $.ajax({ 
+  $.ajax({
     url: '/tweets',
     method: 'GET'
   }).then((response) => {
     renderTweets(response);
-  })
-}
+  });
+};
 
 // checks to see if either error message is visible, if so then hides the error message
 const visible = (error) => {
-  if($('.empty').is(':visible')) {
+  if ($('.empty').is(':visible')) {
     $('.empty').slideUp("fast");
-  } else if($('.too-long').is(':visible')) {
+  } else if ($('.too-long').is(':visible')) {
     $('.too-long').slideUp("fast");
   }
-}
+};
 
 
 // used to make functions available after the document is loaded
@@ -105,7 +104,7 @@ $(document).ready(function() {
     event.preventDefault();
     if ($('#tweet-text').val() === "") {
       visible();
-        $('.empty').slideDown();
+      $('.empty').slideDown();
     } else if ($('#tweet-text').val().length > 140){
       visible();
       $('.too-long').slideDown();
@@ -120,9 +119,9 @@ $(document).ready(function() {
         loadTweets();
         $('#tweet-text').val("");
         $('.counter').text(140);
-      })
+      });
     }
-  })
+  });
   
   renderTweets(data);
 

@@ -89,13 +89,23 @@ const loadTweets = () => {
 
 
 // checks to see if either error message is visible, if so then hides the error message
-const visible = (error) => {
+const visible = () => {
   if ($('.empty').is(':visible')) {
     $('.empty').slideUp("fast");
   } else if ($('.too-long').is(':visible')) {
     $('.too-long').slideUp("fast");
   }
 };
+
+const isThereError = () => {
+  if ($('#tweet-text').val() === "") {
+    visible();
+    $('.empty').slideDown();
+  } else if ($('#tweet-text').val().length > 140) {
+    visible();
+    $('.too-long').slideDown();
+  }
+}
 
 
 // used to make functions available after the document is loaded

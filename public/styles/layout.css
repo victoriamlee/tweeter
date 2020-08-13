@@ -80,8 +80,6 @@ body {
   padding-bottom: 1em;
   padding-left: 1em;
   border-bottom: 2px solid #545149;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .footer {

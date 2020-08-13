@@ -25,6 +25,7 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+ /* container class contains the input for a new tweet and list of tweets */
 .container {
   margin: auto;
   width: 90%;
@@ -34,6 +35,7 @@ body {
   flex-direction: column;
 }
 
+/* tweet class contains individual tweets, html formatting can be found on client.js */
 .tweet {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -43,11 +45,12 @@ body {
   flex-direction: column;
 }
 
+/* hover is applied to tweet class */
 .tweet:hover {
   box-shadow: 4px 4px #c7afd6;
 }
 
-
+/* header class contains user's avatar, name, and handle in tweet format */
 .header {
   margin-bottom: 1em;
   display: flex;
@@ -55,20 +58,24 @@ body {
   align-items: center;
 }
 
+/* image class is used to style the avatar's image */
 .image {
   margin-right: 0.5em;
 }
 
+/* user class is used to style the name of the user */
 .user {
   padding-right: 1em;
   display: flex;
   align-items: center;
 }
 
+/* username class is used to style the handle of the user */
 .username {
   display: none;
 }
 
+/* when hover is in effect, the username class is styled a different way */
 .tweet:hover .username {
   opacity: 1;
   color: #c7afd6;
@@ -76,7 +83,7 @@ body {
   justify-content: flex-end;
 }
 
-
+/* body class is used to style the text if the actual tweet */
 .body {
   margin-bottom: 1em;
   padding-bottom: 1em;
@@ -86,6 +93,7 @@ body {
   word-break: break-word;
 }
 
+/* footer class is used to style date and symbols on the bottom of individual tweets */
 .footer {
   font-size: 20px;
   padding-left: 1em;
@@ -95,9 +103,11 @@ body {
   justify-content: space-between;
 }
 
+/* symbols class is used to style symbols used */
 .symbols {
   color: #4056A1;
 }
+
 
 .error {
   margin-left: auto;

@@ -1,3 +1,4 @@
+/* styles the navigation bar */
 nav {
   height: 120px;
   position: fixed;
@@ -11,6 +12,7 @@ nav {
   align-items: flex-end; 
 }
 
+/* logo class styles the logo "tweeter" */
 nav .logo {
   font-family: Bungee, sans-serif;
   font-size: 35px;
@@ -18,7 +20,7 @@ nav .logo {
   margin-bottom: 0.5em;
 }
 
-
+/* in-line class styles the compose button with the arrows" */
 nav .in-line {
   font-family: "Source Sans Pro", sans-serif;
   margin-right: 1.5em;
@@ -26,12 +28,13 @@ nav .in-line {
   display: flex;
 }
 
+/* bold class bolds the word that is wrapped ("write") */
 .bold {
   font-weight: 700;
   margin-right: 0.25em;
 }
 
-
+/* fa-angle-double-down class styles the arrows symbol */
 .fa-angle-double-down {
   color: red;
   margin-bottom: 0.5em;

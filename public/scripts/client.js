@@ -97,6 +97,7 @@ const visible = () => {
   }
 };
 
+
 // checks to see if input is empty
 const empty = () => {
   if ($('#tweet-text').val() === "") {
@@ -106,6 +107,7 @@ const empty = () => {
     return false;
   }
 };
+
 
 // checks to see if input is too long
 const tooLong = () => {
@@ -117,16 +119,6 @@ const tooLong = () => {
   }
 };
 
-// const isThereError = () => {
-//   if ($('#tweet-text').val() === "") {
-//     visible();
-//     $('.empty').slideDown();
-//   } else if ($('#tweet-text').val().length > 140) {
-//     visible();
-//     $('.too-long').slideDown();
-//   }
-// }
-
 
 // used to make functions available after the document is loaded
 $(document).ready(function() {
@@ -135,10 +127,8 @@ $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
     if (empty()) {
-      // visible();
       $('.empty').slideDown();
     } else if (tooLong()) {
-      // visible();
       $('.too-long').slideDown();
     } else {
       visible();

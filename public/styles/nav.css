@@ -62,6 +62,7 @@ nav .in-line {
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   }
 
+  /* styling the compose button when the screen is at most 1024px */
   nav .compose {
     background-color: #c7afd6;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");

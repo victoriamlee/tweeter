@@ -131,8 +131,8 @@ body {
   color: red;
 }
 
-
-@media only screen and (min-width: 1025px) {
+/* Laptops / Desktops: minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
   
   .desktop-layout {
     margin: 2em;

@@ -47,6 +47,7 @@ nav .in-line {
 /* Tablet breakpoint is maximum width of 1024px */
 @media only screen and (max-width: 1024px) {
 
+  /* styling the nav when the screen is at most 1024px */
   nav {
     background-color: #c7afd6;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");

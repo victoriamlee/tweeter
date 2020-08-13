@@ -114,11 +114,7 @@ $(document).ready(function() {
       visible();
       $('.too-long').slideDown();
     } else {
-      if ($('.empty').is(':visible')) {
-        $('.empty').slideUp();
-      } else if ($('.too-long').is(':visible')) {
-        $('.too-long').slideUp();
-      }
+      visibile();
       // makes ajax post request
       $.ajax({
         url: '/tweets',

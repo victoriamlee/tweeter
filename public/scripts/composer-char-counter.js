@@ -1,3 +1,6 @@
+// avoid errors with $ for eslint
+/* eslint-env jquery, browser */
+
 // used to make functions available after the document is loaded
 $(document).ready(function() {
 

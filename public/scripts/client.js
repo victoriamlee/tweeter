@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// const e = require("express");
 
 // Fake data taken from initial-tweets.json
 const data = [
@@ -53,14 +52,15 @@ const createTweetElement = tweetObj => {
             <span>${escape(tweetObj.content.text)}</span>
           </div>
           <div class="footer">
-            <span>10 days ago</span>
+          <p class='date'> ${moment(tweetObj.created_at).fromNow()} </p>
             <span class="symbols">
               <span class="fab fa-font-awesome-flag"></span>
               <i class="fas fa-retweet"></i>
               <i class="fas fa-heart"></i>
             </span>
           </div>
-        </article>`    
+        </article>` 
+        console.log($tweet)   
   return $tweet;
 };
 

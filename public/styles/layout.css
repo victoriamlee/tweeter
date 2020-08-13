@@ -123,19 +123,35 @@ main {
 }
 
 /* Desktop styles */
-@media only screen and (min-width: 800px) {
-  header {
-    width: 40%;
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: center; */
-    float: left;
+@media only screen and (min-width: 768px) {
+  
+  .desktop-layout {
+    margin: 2em;
+    /* padding: 4em; */
+    display: flex;
+    flex-wrap: nowrap;
+    /* align-items: baseline; */
   }
+  
+  header {
+    margin: 2em;
+    /* margin-top: 5em; */
+    padding: 2em;
+    width: 50%;
+    /* height: 50%; */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+  }
+
   .class {
-    width: 60%;
-    /* display: flex;
-    justify-content: flex-end;
-    align-items: center; */
-    float: right;
+    margin: 2em;
+    padding: 2em;
+    /* margin-top: 5em; */
+    width: 50%;
+    /* height: 50%; */
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: center; */
   }
 }

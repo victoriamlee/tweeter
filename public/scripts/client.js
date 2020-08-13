@@ -87,10 +87,11 @@ const loadTweets = () => {
 }
 
 
-
+// used to make functions available after the document is loaded
 $(document).ready(function() {
 
 
+  // submit handler to listen for form submission using jQuery
   $("#input").submit(function(event) {
     event.preventDefault();
     if ($('#tweet-text').val() === "") {
@@ -109,6 +110,7 @@ $(document).ready(function() {
       } else if ($('.too-long').is(':visible')) {
         $('.too-long').slideUp();
       }
+      // makes ajax post request
       $.ajax({
         url: '/tweets',
         method: 'POST',

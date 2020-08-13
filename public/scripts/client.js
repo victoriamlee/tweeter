@@ -87,8 +87,11 @@ const loadTweets = () => {
 }
 
 const visible = (error) => {
-  if(error.is(':visible')) {
-    error.slideUp("fast");
+  if($('.empty').is(':visible')) {
+    $('.empty').slideUp("fast");
+  } else if($('.too-long').is(':visible')) {
+    $('.too-long').slideUp("fast");
+  }
 }
 
 
@@ -103,7 +106,7 @@ $(document).ready(function() {
     /* if the input field is empty, then if the error message for too many character is showing, 
     then slide up the error message for too many characters */
     if ($('#tweet-text').val() === "") {
-      visible($('.too-long'));
+      visible();
       // if($('.too-long').is(':visible')) {
       //   $('.too-long').slideUp("fast");
       // }
@@ -111,7 +114,7 @@ $(document).ready(function() {
       /* else if there are too many characters in input, then if error message for empty input is showing, 
       then slide up the error message for empty input */
     } else if ($('#tweet-text').val().length > 140){
-      visible($('.empty'));
+      visible();
       // if($('.empty').is(':visible')) {
       //   $('.empty').slideUp("fast");
       // }

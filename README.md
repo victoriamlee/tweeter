@@ -6,10 +6,17 @@ A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and CSS3 t
 
 ## Screenshots
 
+Homepage
 !["Screenshot of homepage"](https://github.com/victoriamlee/tweeter/blob/master/docs/homepage.png)
 !["Screenshot of homepage with desktop layout"](https://github.com/victoriamlee/tweeter/blob/master/docs/homepage-desktop-view.png)
+
+Tweet Compose Box
 !["Screenshot of tweet compose box"](https://github.com/victoriamlee/tweeter/blob/master/docs/tweet-compose-box.png)
+
+List of Tweets
 !["Screenshot of tweets"](https://github.com/victoriamlee/tweeter/blob/master/docs/tweets.png)
+
+Error!
 !["Screenshot of error message"](https://github.com/victoriamlee/tweeter/blob/master/docs/edited-error-message.png)
 
 ## Dependencies

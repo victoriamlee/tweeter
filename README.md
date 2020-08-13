@@ -7,7 +7,7 @@ A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and CSS3 t
 ## Screenshots
 
 !["Screenshot of tweet compose box"]()
-!["Screenshot of tweet compose box"]()
+!["Screenshot of tweet compose box"](https://github.com/victoriamlee/tweeter/blob/master/docs/tweet-compose-box.png)
 !["Screenshot of tweet compose box"]()
 !["Screenshot of tweet compose box"]()
 !["Screenshot of tweet compose box"]()

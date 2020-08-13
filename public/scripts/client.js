@@ -86,6 +86,7 @@ const loadTweets = () => {
   })
 }
 
+// checks to see if either error message is visible, if so then hides the error message
 const visible = (error) => {
   if($('.empty').is(':visible')) {
     $('.empty').slideUp("fast");

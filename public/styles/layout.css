@@ -166,7 +166,6 @@ body {
 
   /* styling the container class when the screen is at least 1024px */
   .container {
-    /* margin: auto; */
     margin-top: 2em;
     padding-top: 2em;
     display: flex;

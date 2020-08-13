@@ -1,8 +1,10 @@
+/* styles the form for new tweet */
 form {
   display: flex;
   flex-direction: column;
 }
 
+/* styles the textarea (input area) */
 textarea {
   border: 0;
   outline: 0;
@@ -10,6 +12,7 @@ textarea {
   background-color: #f4f1ec;
 }
 
+/* tweeted class includes the submit/tweet button and counter, styles the two elements */
 .tweeted {
   margin-top: 0.5em;
   font-family: Bungee, sans-serif;
@@ -18,13 +21,13 @@ textarea {
   justify-content: space-between;
 }
 
-button {
+/* button class styles submit/tweet button */
+.button {
   background-color: #4056A1;
   color: #FFFF;
 }
 
-
-
+/* NEGATIVE class styles the counted when the character count becomes negative */
 .NEGATIVE {
   color: red;
 }

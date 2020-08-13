@@ -91,14 +91,19 @@ const loadTweets = () => {
 $(document).ready(function() {
 
 
-  // submit handler to listen for form submission using jQuery
+  // submit handler to listen for form submission using jQuery (listens for user to click submit tweet)
   $("#input").submit(function(event) {
+    // prevents the default action to occur (specifically: refreshing the page in this case)
     event.preventDefault();
+    /* if the input field is empty, then if the error message for too many character is showing, 
+    then slide up the error message for too many characters */
     if ($('#tweet-text').val() === "") {
       if($('.too-long').is(':visible')) {
         $('.too-long').slideUp("fast");
       }
         $('.empty').slideDown();
+      /* else if there are too many characters in input, then if error message for empty input is showing, 
+      then slide up the error message for empty input */
     } else if ($('#tweet-text').val().length > 140){
       if($('.empty').is(':visible')) {
         $('.empty').slideUp("fast");

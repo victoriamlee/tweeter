@@ -108,7 +108,7 @@ body {
   color: #4056A1;
 }
 
-
+/* error class is used to style the overall error message */
 .error {
   margin-left: auto;
   margin-right: auto;
@@ -119,6 +119,7 @@ body {
   white-space: nowrap;
 }
 
+/* too-long class is used to style the error message for when a user uses too many characters */
 .too-long {
   display: none;
   margin-top: 1em;
@@ -130,6 +131,7 @@ body {
   
 }
 
+/* empty class is used to style the error message for when a user tries to tweet an empty input */
 .empty {
   display: none;
   margin-top: 1em;

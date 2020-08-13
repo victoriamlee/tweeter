@@ -148,7 +148,9 @@ body {
   
   /* desktop-layout class includes the header and main body of html */
   .desktop-layout {
-    margin: 2em;
+    margin: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -157,18 +159,18 @@ body {
 
   /* styling the header when the screen is at least 1024px */
   header {
-    margin: 2em;
-    display: flex;
+    margin-top: 4em;
+    margin-right: 4em;
+    flex-shrink: 2;
   }
 
   /* styling the container class when the screen is at least 1024px */
   .container {
-    margin: auto;
+    /* margin: auto; */
     margin-top: 2em;
     padding-top: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* flex-grow: 2; */
   }
 }

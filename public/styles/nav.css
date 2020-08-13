@@ -20,6 +20,7 @@ nav .logo {
   margin-bottom: 0.5em;
 }
 
+/* compose class styles the "write a new tweet" button */
 nav .compose {
   background-color: #4056A1;
   color: #FFFF;

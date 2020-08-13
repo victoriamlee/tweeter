@@ -1,5 +1,6 @@
 /* styles the form for new tweet */
 form {
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -10,6 +11,10 @@ textarea {
   outline: 0;
   border-bottom: 2px solid #545149;
   background-color: #f4f1ec;
+}
+
+label {
+  font-weight: 700;
 }
 
 /* tweeted class includes the submit/tweet button and counter, styles the two elements */

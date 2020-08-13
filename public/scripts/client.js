@@ -126,5 +126,4 @@ $(document).ready(function() {
   renderTweets(data);
 
   loadTweets();
-
 });

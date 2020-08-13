@@ -99,7 +99,6 @@ const visible = (error) => {
 // used to make functions available after the document is loaded
 $(document).ready(function() {
 
-
   // submit handler to listen for form submission using jQuery (listens for user to click submit tweet)
   $("#input").submit(function(event) {
     event.preventDefault();
@@ -128,6 +127,4 @@ $(document).ready(function() {
 
   loadTweets();
 
-  
-  
 });

@@ -32,12 +32,15 @@ const data = [
 ]
 
 
+// function used to escape some text and then use it inside $()
 const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 }
 
+
+// creates new tweet
 const createTweetElement = tweetObj => {
   const $tweet = `
   <article class="tweet">
@@ -65,6 +68,7 @@ const createTweetElement = tweetObj => {
 };
 
 
+// loops through given object to create new tweets
 const renderTweets = tweets => {
   for (let tweetObj of tweets) {
   $('#posted').prepend(createTweetElement(tweetObj));
@@ -72,6 +76,7 @@ const renderTweets = tweets => {
 }
 
 
+// sends ajax request to load all tweets
 const loadTweets = () => {
   $.ajax({ 
     url: '/tweets',
@@ -80,8 +85,6 @@ const loadTweets = () => {
     renderTweets(response);
   })
 }
-
-
 
 
 

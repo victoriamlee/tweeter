@@ -23,8 +23,6 @@ nav .in-line {
   margin-right: 1.5em;
   font-size: 20px;
   display: flex;
-  /* justify-content: flex-end; */
-  /* align-items: flex-end; */
 }
 
 .bold {

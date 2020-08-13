@@ -1,3 +1,4 @@
+/* styles the header of the html page */
 header {
   height: 400px;
   width: 100%;
@@ -10,6 +11,7 @@ header {
   align-items: center;
 }
 
+/* unbold class styles the word to be less bold (the last name) */
 .unbold {
   font-weight: 300;
 }

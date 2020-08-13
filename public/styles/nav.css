@@ -41,6 +41,7 @@ nav .in-line {
   justify-content: center;
 }
 
+/* Tablet breakpoint is maximum width of 1024px */
 @media only screen and (max-width: 1024px) {
 
   nav {

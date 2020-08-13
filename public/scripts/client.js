@@ -97,7 +97,7 @@ const visible = () => {
   }
 };
 
-
+// checks to see if input is empty
 const empty = () => {
   if ($('#tweet-text').val() === "") {
     visible();

@@ -8,6 +8,8 @@ A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and CSS3 t
 
 Homepage
 !["Screenshot of homepage"](https://github.com/victoriamlee/tweeter/blob/master/docs/homepage.png)
+
+Desktop View of Homepage
 !["Screenshot of homepage with desktop layout"](https://github.com/victoriamlee/tweeter/blob/master/docs/homepage-desktop-view.png)
 
 Tweet Compose Box

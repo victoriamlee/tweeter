@@ -20,6 +20,14 @@ nav .logo {
   margin-bottom: 0.5em;
 }
 
+nav .compose {
+  background-color: #4056A1;
+  color: #FFFF;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* in-line class styles the compose button with the arrows" */
 nav .in-line {
   font-family: "Source Sans Pro", sans-serif;

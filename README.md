@@ -25,4 +25,7 @@ Error!
 
 - Express
 - Node 5.10.x or above
+- Body Parser
+- Chance
+- MD5
 - Moment

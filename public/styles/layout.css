@@ -146,6 +146,7 @@ body {
 /* Laptops / Desktops: minimum width of 1024px */
 @media only screen and (min-width: 1024px) {
   
+  /* desktop-layout class includes the header and main body of html */
   .desktop-layout {
     margin: 2em;
     display: flex;
@@ -154,12 +155,14 @@ body {
     flex-wrap: nowrap;
   }
 
+  /* styling the header when the screen is at least 1024px */
   header {
     margin: 2em;
     padding: 2em;
     width: 10%;
   }
 
+  /* styling the container class when the screen is at least 1024px */
   .container {
     margin-top: 2em;
     padding: 2em;

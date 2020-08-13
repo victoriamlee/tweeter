@@ -97,15 +97,25 @@ const visible = () => {
   }
 };
 
-const isThereError = () => {
+
+const empty = () => {
   if ($('#tweet-text').val() === "") {
     visible();
-    $('.empty').slideDown();
-  } else if ($('#tweet-text').val().length > 140) {
-    visible();
-    $('.too-long').slideDown();
+    return true;
+  } else {
+    return false;
   }
 }
+
+// const isThereError = () => {
+//   if ($('#tweet-text').val() === "") {
+//     visible();
+//     $('.empty').slideDown();
+//   } else if ($('#tweet-text').val().length > 140) {
+//     visible();
+//     $('.too-long').slideDown();
+//   }
+// }
 
 
 // used to make functions available after the document is loaded
@@ -114,8 +124,8 @@ $(document).ready(function() {
   // submit handler to listen for form submission using jQuery (listens for user to click submit tweet)
   $("#input").submit(function(event) {
     event.preventDefault();
-    if ($('#tweet-text').val() === "") {
-      visible();
+    if (empty()) {
+      // visible();
       $('.empty').slideDown();
     } else if ($('#tweet-text').val().length > 140) {
       visible();

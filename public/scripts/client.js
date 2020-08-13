@@ -125,30 +125,3 @@ $(document).ready(function() {
   
   
 });
-
-
-// $("#input").submit(function(event) {
-//   event.preventDefault();
-//   if ($('#tweet-text').val() === "") {
-//     if($('.too-long').is(':visible')) {
-      
-//     }
-//     $('.empty').slideDown("slow");
-//   } else if ($('#tweet-text').val().length > 140){
-//     $('.too-long').slideDown("slow");
-//   } else {
-//     if ($('.empty').is(':visible')) {
-//       $('.empty').slideUp("slow");
-//     } else if ($('.too-long').is(':visible')) {
-//       $('.too-long').slideUp("slow");
-//     }
-//     $.ajax({
-//       url: '/tweets',
-//       method: 'POST',
-//       data: $(this).serialize()
-//     }).then((response) => {
-//       loadTweets();
-//       $('#tweet-text').val("");
-//       $('.counter').text(140);
-//     })
-//   }

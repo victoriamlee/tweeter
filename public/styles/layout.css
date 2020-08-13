@@ -25,12 +25,13 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-main {
+.container {
   margin: auto;
   width: 90%;
   background-color: #f4f1ec;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .tweet {
@@ -79,6 +80,8 @@ main {
   padding-bottom: 1em;
   padding-left: 1em;
   border-bottom: 2px solid #545149;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer {
@@ -122,36 +125,41 @@ main {
   color: red;
 }
 
+
+@media only screen and (max-width: 1549px) {
+  
+  nav {
+    background-color: #c7afd6;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  }
+}
+
+
 /* Desktop styles */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1550px) {
   
   .desktop-layout {
     margin: 2em;
-    /* padding: 4em; */
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    /* align-items: baseline; */
-  }
-  
-  header {
-    margin: 2em;
-    /* margin-top: 5em; */
-    padding: 2em;
-    width: 50%;
-    /* height: 50%; */
-    /* display: flex; */
-    /* justify-content: flex-start; */
-    /* align-items: center; */
   }
 
-  .class {
+  header {
     margin: 2em;
     padding: 2em;
-    /* margin-top: 5em; */
     width: 50%;
-    /* height: 50%; */
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    /* align-items: center; */
   }
+
+  .container {
+    margin: 2em;
+    padding: 2em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
 }

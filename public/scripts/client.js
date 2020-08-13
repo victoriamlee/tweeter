@@ -114,7 +114,7 @@ $(document).ready(function() {
       visible();
       $('.too-long').slideDown();
     } else {
-      visibile();
+      visible();
       // makes ajax post request
       $.ajax({
         url: '/tweets',

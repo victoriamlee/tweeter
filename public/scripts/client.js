@@ -86,6 +86,11 @@ const loadTweets = () => {
   })
 }
 
+const visible = (error) => {
+  if(error.is(':visible')) {
+    error.slideUp("fast");
+}
+
 
 // used to make functions available after the document is loaded
 $(document).ready(function() {

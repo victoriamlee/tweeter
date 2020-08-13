@@ -107,6 +107,7 @@ const empty = () => {
   }
 };
 
+// checks to see if input is too long
 const tooLong = () => {
   if ($('#tweet-text').val().length > 140) {
     visible();

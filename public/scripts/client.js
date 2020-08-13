@@ -4,6 +4,8 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// avoid errors with $ for eslint
+/* eslint-env jquery, browser */
 
 // Fake data taken from initial-tweets.json
 const data = [
@@ -105,7 +107,7 @@ $(document).ready(function() {
     if ($('#tweet-text').val() === "") {
       visible();
       $('.empty').slideDown();
-    } else if ($('#tweet-text').val().length > 140){
+    } else if ($('#tweet-text').val().length > 140) {
       visible();
       $('.too-long').slideDown();
     } else {

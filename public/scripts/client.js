@@ -34,7 +34,7 @@ const data = [
 ];
 
 
-// function used to escape some text and then use it inside $()
+// function used to avoid XSS (Cross-Site Scripting)
 const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));

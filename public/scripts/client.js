@@ -107,17 +107,11 @@ $(document).ready(function() {
     then slide up the error message for too many characters */
     if ($('#tweet-text').val() === "") {
       visible();
-      // if($('.too-long').is(':visible')) {
-      //   $('.too-long').slideUp("fast");
-      // }
         $('.empty').slideDown();
       /* else if there are too many characters in input, then if error message for empty input is showing, 
       then slide up the error message for empty input */
     } else if ($('#tweet-text').val().length > 140){
       visible();
-      // if($('.empty').is(':visible')) {
-      //   $('.empty').slideUp("fast");
-      // }
       $('.too-long').slideDown();
     } else {
       if ($('.empty').is(':visible')) {
